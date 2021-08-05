@@ -1,8 +1,8 @@
 /* ---------- CUSTOM PROPERTIES --------- */
 
 :root{
-    --fuenteHeading: font-family: 'PT Sans', sans-serif;
-    --fuenteParrafos: font-family: 'Open Sans', sans-serif;
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
     
     --primario: #784d3c;
     --blanco: #ffffff;
@@ -53,10 +53,10 @@ h4{
     font-size: 2.8rem;
 }
 
-img{
-    /* max-width: 100%; */
+/* img{
+    max-width: 100%;
 }
-
+ */
 /*---------- UTILIDADES ----------*/
 
 .no-margin{
@@ -71,3 +71,18 @@ img{
     text-align: center;
 }
 
+/* ----- HEADER ----- */
+
+.header{
+    background-image: url(../img/banner.jpg);
+    height: 60rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header__text{
+    color: var(--blanco);
+    text-align: center;
+    margin-top: 5rem;
+}
