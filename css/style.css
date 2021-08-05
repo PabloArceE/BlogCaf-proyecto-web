@@ -7,6 +7,7 @@
     --primario: #784d3c;
     --blanco: #ffffff;
     --negro: #000000;
+    --gris: #e1e1e1;
 }
 
 html{
@@ -53,10 +54,10 @@ h4{
     font-size: 2.8rem;
 }
 
-/* img{
+img{
     max-width: 100%;
 }
- */
+
 /*---------- UTILIDADES ----------*/
 
 .no-margin{
@@ -140,3 +141,39 @@ h4{
     font-size: 1.8rem;
 }
 
+@media (min-width: 768px) {
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+
+.entrada{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+.entrada:last-of-type{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.boton{
+    display: block;
+    font-family: var(--fuenteHeading);
+    color: var(--blanco);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    margin-bottom: 2rem;    
+}
+@media (min-width: 768px) {
+    .boton{
+        display: inline-block;
+    }
+}
+
+.boton--primario{
+    background-color: var(--negro);
+}
